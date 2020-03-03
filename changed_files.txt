@@ -1,0 +1,10 @@
+Modified		form-project.php
+Modified		includes/notifications.php
+Modified		includes/workspace.php
+Modified		parts/content-proposal.php
+Modified		theme-framework
+Modified		theme-framework/includes/views-login.php
+Modified		theme-framework/lib/customizer-custom-controls/css/customizer.css
+Modified		theme-framework/lib/customizer-custom-controls/inc/custom-controls.php
+Modified		theme-framework/lib/customizer-custom-controls/inc/sanitizers.php
+Modified		theme-framework/lib/customizer-custom-controls/js/customizer.js
