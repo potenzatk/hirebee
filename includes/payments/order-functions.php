@@ -207,10 +207,12 @@ function appthemes_payments_add_tax( $order ){
 	$tax_rate = $options->tax_charge;
 
 	$total = $order->get_total();
-	$charged_tax = $total * ( $tax_rate / 100 );
-
-	if( $charged_tax == 0 )
+	$charged_tax = 0;
+	if ( $tax_rate > 0 ) {
+		$charged_tax = $total * ( $tax_rate / 100 );
+		if( $charged_tax == 0 )
 		return;
+	}
 
 	$order->add_item( '_regional-tax', number_format( $charged_tax, 2, '.', '' ), $order->get_id() );
 }
